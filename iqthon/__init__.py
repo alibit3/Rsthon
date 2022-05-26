@@ -6,11 +6,11 @@ from .core.session import iqthon
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 __version__ = "7.6"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "<t.me/iqthon>"
-__copyright__ = "telethon AR (C) 2020 - 2021  " + __author__
+__author__ = "<t.me/Rsthon>"
+__copyright__ = "Rsthon (C) 2020 - 2021  " + __author__
 iqthon.version = __version__
 iqthon.tgbot.version = __version__
-LOGS = logging.getLogger("IQTHON")
+LOGS = logging.getLogger("Rsthon")
 bot = iqthon
 StartTime = time.time()
 catversion = "7.6"
