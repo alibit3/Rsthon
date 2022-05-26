@@ -7,13 +7,13 @@ from .core.logger import logging
 from .core.session import iqthon
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
 LOGS = logging.getLogger(
-"تليثون العرب"
+" رسثون"
 )
 
 cmdhr = Config.COMMAND_HAND_LER
 try:
     LOGS.info(
-"بدء تنزيل تليثون العرب"
+"بدء تنزيل  رسثون"
 )
     iqthon.loop.run_until_complete(
 setup_bot())
@@ -32,7 +32,7 @@ async def startup_process():
     await load_plugins("assistant")
     await load_plugins("MusicTelethon")
     print(
-f"<b> ⌔︙ اهلا بك لقد نصبت تليثون العرب بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/iqthon "
+f"<b> ⌔︙ اهلا بك لقد نصبت رسثون بنجاح 🥁  ذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/RS_SY "
 )
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
@@ -44,7 +44,7 @@ f"<b> ⌔︙ اهلا بك لقد نصبت تليثون العرب بنجاح �
 iqthon.loop.run_until_complete(startup_process())
 def start_bot():
   try:
-      List = ["iqthon","uruur","tttuu","TelethonMusic"]
+      List = ["iqthon","uruur","RS_SY","TelethonMusic"]
       for id in List :
           iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest(id)))
   except Exception as e:
